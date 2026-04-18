@@ -14,35 +14,53 @@ export function Hero() {
       <div className="absolute top-[-200px] left-[20%] w-[600px] h-[600px] bg-yellow/12 rounded-full blur-[120px] pointer-events-none" />
       <div className="absolute top-[100px] right-[-100px] w-[400px] h-[400px] bg-[#4d65ff]/8 rounded-full blur-[100px] pointer-events-none" />
 
-      {/* Instantly Expert badge, top right */}
-      <motion.div
-        initial={{ opacity: 0, y: -10 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.4 }}
-        className="absolute top-20 right-6 md:top-24 md:right-10 z-20 hidden sm:block"
-      >
-        <Image
-          src="/images/instantly-expert.svg"
-          alt="Instantly Expert"
-          width={160}
-          height={44}
-          className="h-10 md:h-12 w-auto"
-        />
-      </motion.div>
-
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
-        <motion.h1
-          initial={{ opacity: 0, y: 20 }}
+        {/* H1 row with Instantly badge on the right, pair centered as one unit */}
+        <div className="flex items-center justify-center gap-4 md:gap-8 mb-6">
+          <motion.h1
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            className="font-heading font-bold text-4xl sm:text-5xl lg:text-6xl leading-[1.08] tracking-tight text-navy"
+          >
+            Smarter GTM.
+            <br />
+            <span className="bg-gradient-to-r from-yellow via-yellow to-[#f59e0b] bg-clip-text text-transparent">
+              Faster growth.
+            </span>
+          </motion.h1>
+
+          <motion.div
+            initial={{ opacity: 0, x: 10 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.4, delay: 0.3 }}
+            className="hidden sm:block shrink-0"
+          >
+            <Image
+              src="/images/instantly-expert.svg"
+              alt="Instantly Expert"
+              width={110}
+              height={124}
+              className="h-[90px] md:h-[124px] w-auto"
+            />
+          </motion.div>
+        </div>
+
+        {/* Mobile: badge below H1, centered */}
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.1 }}
-          className="font-heading font-bold text-4xl sm:text-5xl lg:text-6xl leading-[1.08] tracking-tight text-navy mb-6"
+          transition={{ duration: 0.4, delay: 0.3 }}
+          className="flex justify-center mb-6 sm:hidden"
         >
-          Smarter GTM.
-          <br />
-          <span className="bg-gradient-to-r from-yellow via-yellow to-[#f59e0b] bg-clip-text text-transparent">
-            Faster growth.
-          </span>
-        </motion.h1>
+          <Image
+            src="/images/instantly-expert.svg"
+            alt="Instantly Expert"
+            width={80}
+            height={90}
+            className="h-[90px] w-auto"
+          />
+        </motion.div>
 
         <motion.p
           initial={{ opacity: 0, y: 20 }}
