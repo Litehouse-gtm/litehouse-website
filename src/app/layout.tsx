@@ -13,6 +13,7 @@ const onest = Onest({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://litehouse.so"),
   title: "Litehouse | B2B Outbound That Actually Works",
   description:
     "Litehouse builds and runs signal-based cold email systems that fill your pipeline with qualified leads. No SDRs, no guesswork.",

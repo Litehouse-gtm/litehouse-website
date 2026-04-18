@@ -15,6 +15,22 @@ export function Hero() {
       <div className="absolute top-[100px] right-[-100px] w-[400px] h-[400px] bg-[#4d65ff]/8 rounded-full blur-[100px] pointer-events-none" />
 
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
+        {/* Mobile: badge above H1, centered */}
+        <motion.div
+          initial={{ opacity: 0, y: -10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4 }}
+          className="flex justify-center mb-6 sm:hidden"
+        >
+          <Image
+            src="/images/instantly-expert.svg"
+            alt="Instantly Expert"
+            width={80}
+            height={90}
+            className="h-[90px] w-auto"
+          />
+        </motion.div>
+
         {/* H1 row with Instantly badge on the right, pair centered as one unit */}
         <div className="flex items-center justify-center gap-4 md:gap-8 mb-6">
           <motion.h1
@@ -45,22 +61,6 @@ export function Hero() {
             />
           </motion.div>
         </div>
-
-        {/* Mobile: badge below H1, centered */}
-        <motion.div
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4, delay: 0.3 }}
-          className="flex justify-center mb-6 sm:hidden"
-        >
-          <Image
-            src="/images/instantly-expert.svg"
-            alt="Instantly Expert"
-            width={80}
-            height={90}
-            className="h-[90px] w-auto"
-          />
-        </motion.div>
 
         <motion.p
           initial={{ opacity: 0, y: 20 }}
