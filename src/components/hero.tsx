@@ -14,29 +14,23 @@ export function Hero() {
       <div className="absolute top-[-200px] left-[20%] w-[600px] h-[600px] bg-yellow/12 rounded-full blur-[120px] pointer-events-none" />
       <div className="absolute top-[100px] right-[-100px] w-[400px] h-[400px] bg-[#4d65ff]/8 rounded-full blur-[100px] pointer-events-none" />
 
-      <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
-        {/* Partner badges */}
-        <motion.div
-          initial={{ opacity: 0, y: 15 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4 }}
-          className="flex items-center justify-center gap-3 mb-8"
-        >
-          <Image
-            src="/images/instantly-expert.svg"
-            alt="Instantly Expert"
-            width={160}
-            height={44}
-            className="h-10 w-auto"
-          />
-          <div className="flex items-center gap-2 bg-card border border-border rounded-full px-4 py-2">
-            <div className="w-5 h-5 rounded-full bg-[#f97316] flex items-center justify-center">
-              <span className="text-white text-[9px] font-bold">C</span>
-            </div>
-            <span className="text-sm font-medium text-muted">Clay Partner</span>
-          </div>
-        </motion.div>
+      {/* Instantly Expert badge, top right */}
+      <motion.div
+        initial={{ opacity: 0, y: -10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.4 }}
+        className="absolute top-20 right-6 md:top-24 md:right-10 z-20 hidden sm:block"
+      >
+        <Image
+          src="/images/instantly-expert.svg"
+          alt="Instantly Expert"
+          width={160}
+          height={44}
+          className="h-10 md:h-12 w-auto"
+        />
+      </motion.div>
 
+      <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
