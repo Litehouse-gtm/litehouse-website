@@ -20,7 +20,7 @@ const months = [
   },
   {
     month: "Month 2",
-    label: "Optimise",
+    label: "Optimize",
     focus: "Iterate and accelerate",
     items: [
       "Early results reviewed, campaigns iterated",
@@ -28,21 +28,21 @@ const months = [
       "Intent and buying signal logic added into campaigns",
       "Volume scaled on what's working",
     ],
-    outcome: "30-60 interested leads",
+    outcome: "25-50 interested leads",
     color: "bg-[#4d65ff]/10 text-[#4d65ff] border-[#4d65ff]/20",
     dotColor: "bg-[#4d65ff]",
   },
   {
     month: "Month 3",
     label: "Scale",
-    focus: "Scale and systemise",
+    focus: "Scale and systemize",
     items: [
       "Max volume across proven campaigns",
       "Signals refined and sharpened",
-      "Continuous optimisation driven by live data",
-      "Full process systemised for ongoing execution",
+      "Continuous optimization driven by live data",
+      "Full process systemized for ongoing execution",
     ],
-    outcome: "60-100+ interested leads",
+    outcome: "30-70+ interested leads",
     color: "bg-green/10 text-green border-green/20",
     dotColor: "bg-green",
   },
@@ -66,10 +66,10 @@ export function SprintTimeline() {
             The 90-Day Sprint
           </span>
           <h2 className="font-heading font-bold text-3xl sm:text-4xl text-white mb-4">
-            From zero to scalable acquisition in 12 weeks
+            The 12 week program that fills your pipeline
           </h2>
           <p className="text-lg text-white/50 max-w-2xl mx-auto">
-            We install the system in two weeks, then run and optimise it over a
+            We install the system in two weeks, then run and optimize it over a
             12-week sprint to reach your entire market.
           </p>
         </motion.div>
