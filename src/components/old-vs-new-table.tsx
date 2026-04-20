@@ -11,7 +11,7 @@ const dimensions = [
   "AI-powered lead research & scoring",
   "Multi-source data enrichment",
   "Intent & buying signal detection",
-  "Hyper-relevant personalisation at scale",
+  "Hyper-relevant personalization at scale",
   "Live in 2 weeks",
   "Predictable monthly cost",
   "You own everything",

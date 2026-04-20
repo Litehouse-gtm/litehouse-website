@@ -15,7 +15,7 @@ const faqs = [
   },
   {
     q: "How do you ensure compliance and avoid spam filters?",
-    a: "We follow best practices across every campaign to protect deliverability and stay compliant. That means using dedicated domains and warmed-up inboxes, authenticating with SPF/DKIM/DMARC, and rotating sending to keep volumes natural. Every email is personalised, relevant to the recipient's role, and includes an opt-out to meet GDPR and CAN-SPAM requirements. The result is high inbox placement, stronger reply rates, and zero risk to your brand reputation.",
+    a: "We follow best practices across every campaign to protect deliverability and stay compliant. That means using dedicated domains and warmed-up inboxes, authenticating with SPF/DKIM/DMARC, and rotating sending to keep volumes natural. Every email is personalized, relevant to the recipient's role, and includes an opt-out to meet GDPR and CAN-SPAM requirements. The result is high inbox placement, stronger reply rates, and zero risk to your brand reputation.",
   },
   {
     q: "How is pricing structured?",

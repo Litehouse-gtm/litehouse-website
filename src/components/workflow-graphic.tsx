@@ -30,14 +30,14 @@ const steps = [
   {
     icon: Brain,
     label: "AI Research & Scoring",
-    description: "AI researches every lead, qualifies them against your ICP, and scores them so you prioritise the best prospects first.",
+    description: "AI researches every lead, qualifies them against your ICP, and scores them so you prioritize the best prospects first.",
     tools: ["Clay", "AI Agents", "Custom scoring"],
     dotColor: "bg-yellow",
   },
   {
     icon: Database,
     label: "Data Enrichment",
-    description: "Once we know who to contact, we compile deep context on every prospect. Role details, company news, tech stack, funding, anything that makes personalisation possible.",
+    description: "Once we know who to contact, we compile deep context on every prospect. Role details, company news, tech stack, funding, anything that makes personalization possible.",
     tools: ["Clay", "Prospeo", "Clearbit"],
     dotColor: "bg-yellow",
   },
@@ -50,9 +50,9 @@ const steps = [
   },
   {
     icon: PenLine,
-    label: "Personalised Copywriting",
+    label: "Personalized Copywriting",
     description: "Every message is written specifically for the prospect, using the research, the enrichment, and the signals we've gathered. No templates, no generic copy.",
-    tools: ["AI personalisation", "Spintax", "A/B testing"],
+    tools: ["AI personalization", "Spintax", "A/B testing"],
     dotColor: "bg-yellow",
   },
 ];

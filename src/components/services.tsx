@@ -40,7 +40,7 @@ const services = [
     title: "Funnel Design & Strategy",
     tagline: "A system built for your offer, not a template.",
     description:
-      "Campaign architecture, value prop, and positioning sharpened for cold outreach. Ongoing optimisation driven by real data, not assumptions.",
+      "Campaign architecture, value prop, and positioning sharpened for cold outreach. Ongoing optimization driven by real data, not assumptions.",
   },
   {
     icon: PenLine,
@@ -91,7 +91,7 @@ export function Services() {
             Everything you need to fill your pipeline
           </h2>
           <p className="text-muted max-w-2xl mx-auto">
-            A complete outbound system, built, managed, and optimised by our
+            A complete outbound system, built, managed, and optimized by our
             team. Here's what's included.
           </p>
         </motion.div>

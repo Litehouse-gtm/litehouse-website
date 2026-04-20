@@ -16,7 +16,7 @@ const differentiators = [
   },
   {
     icon: Sparkles,
-    title: "AI-powered personalisation",
+    title: "AI-powered personalization",
     description:
       "Every message is hyper-relevant to the specific prospect. Not generic mail-merge fields. Real context, real relevance, at scale.",
     gradient: "from-blue/20 to-blue/5",
